@@ -1,0 +1,187 @@
+body{
+    width: 100%;
+    height: screen;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: roboto, sans-serif;
+    margin-bottom: 8rem;
+    justify-content: center;
+}
+
+#country-label{
+   /* margin: 1rem; */
+   margin-bottom: 0.3rem;
+   margin-right: 23rem;
+
+  }
+
+h1{
+    display: flex;
+      justify-content: center;
+  margin-top: 4rem;
+  font-size: 3rem;
+  font-weight: 500;
+  color:  #006ba8;
+}
+
+
+
+hr{
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  width: 80%;
+  border: 0;
+  height: 4px;
+}
+  
+div{
+     /* margin-top: 10rem; */
+     margin-left: 10rem;
+     /* background-color: rgb(240, 240, 240); */
+ }
+ p{
+  display: inline;
+  margin-bottom: 0.3rem;
+ }
+
+#img{
+      margin: 0%;
+      border: 1.5px solid #fff;
+      width: 18rem;
+    }
+ 
+/* .leb-left{
+  margin-right: 9rem;
+} */
+
+
+.com{
+  margin-left: 19.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.leb-inp{
+  margin-left: 27rem ;
+  margin-bottom: 0.3rem;
+}
+
+#gender-lb{
+  margin-left: 24rem;
+  margin-bottom: 0.3rem;
+}
+
+.marl{
+  margin-left: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.city{
+  display: grid;
+  margin: 0%;
+  /* flex-direction: column; */
+  display: inline;
+  width: 100%;
+  
+}
+
+/* 
+.second-div {
+  background-color: #23a77b;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  flex-direction: column ;
+  flex-direction: column;
+} */
+.p-para{
+  margin-left: 10rem;
+  font-size: small;
+}
+
+.para{
+  font-size: small;
+}
+
+
+ #btn{
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 15rem;
+  margin-bottom: 0.3rem;
+  width: 56rem;
+  height: 2.6rem;
+  font-size: 1rem;
+  background-color: #006ba8;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+ }
+
+
+
+/* display: grid; */
+  
+label{
+  /* display: block; */
+  color: #0077bc;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  font-family: roboto, sans-serif;
+}
+
+select {
+  width: 28rem;
+  margin-top: 0.3rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  border: 1.5px solid #249408b8;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 27rem;
+  margin-top: 0.3rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1.5px solid #249408b8;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.block{
+  display: block;
+}
+
+#address{
+
+  width: 56.4rem;
+}
+
+.area{
+  width: 57.4rem;
+}
+
+.sec-dev{
+  margin: 0%;
+  margin-left: 10rem;
+}
+
+#country:hover {
+  background-color: #f1f1f1;
+}
+
+#country:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+} 
+
+
+#country-input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
