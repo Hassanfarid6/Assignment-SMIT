@@ -1,4 +1,5 @@
-body {
+body
+{
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -6,31 +7,49 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
-  }
-
-  .card {
-    width: 27%;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.container
+{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 65%;
+    border-radius: 20px;
     background-color: #fff;
-  }
+}
+  
+  
+.card 
+{
+  width: 90%;
+  height: 94%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
 
-  .card img {
-    width: 100%;
-  }
+.card img
+{
+  width: 100%;
+}
 
-  .card-content {
-    padding: 16px;
-  }
+.card-content
+{
+  padding: 16px;
+}
 
-  .card-content h3 {
-    margin: 0 0 10px;
-    font-size: 1.2em;
-  }
+.card-content h3
+{
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
 
-  .card-content p {
-    margin: 0;
-    font-size: 0.9em;
-    color: #666;
-  }
+.card-content p
+{
+  margin: 0;
+  font-size: 0.9em;
+  color: #666;
+}
