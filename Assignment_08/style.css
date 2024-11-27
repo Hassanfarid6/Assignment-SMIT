@@ -5,16 +5,26 @@
     font-family: "proxima-soft", "Proxima Soft", "Proxima Nova Soft", Helvetica, Arial, sans-serif;
 }
 
-div
+body
 {
+    background-color: #EAEAEA;
+
+}
+
+.nav
+{
+    background-color: #fff;
     display: flex;
-    margin: 5rem 2rem 2rem 2rem;
+    height: 5rem;
+    margin: 5rem 2rem 0rem 2rem;
 
 }
 
 h5
 {
-    margin:9px;
+    /* background-color: #fff; */
+    margin:6px 20px 0px 10px;
+    /* margin-left:18px; */
     color: #c3c3c3;
     font-weight: 700;
     font-style: normal;
@@ -24,28 +34,91 @@ h5
 .color
 {
     margin-left: 4rem;
+    margin-right: 1rem;
     width: 50px;
     height: 27px;
     border-radius: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-
+    
 }
 
 .num
 {
+    margin:6px 0px 0px 0px;
     letter-spacing: 0.025em;
     font-style: normal;
     font-weight: 700;
     line-height: 1;
     color: #3f3844;
-    font-size: 1.1rem;
+    font-size: 1rem;
     /* font-family: "proxima-soft", "Proxima Soft", "Proxima Nova Soft", Helvetica, Arial, sans-serif; */
 }
 
-.span
+.export
 {
+    color: #c3c3c3;
+    margin: 2.2rem 0.9rem 5rem 0rem;
+    
+}
+.span1
+{
+    margin-top: 2rem;    
     display: inherit;
+}
+
+
+.color-icon
+{
+    margin:8px 0px 0px 40px;
+    /* margin-top: 2rem;     */
+}
+
+
+.colors1
+{
+    width: 348px;
+    margin-left: 11rem ;
+    display: flex;
+    padding: 0 1.5rem;
+    float: left;
+    cursor: pointer;
+    /* background-color: red; */
+    height: 5rem;
+}
+
+.cls1,.cls2,.cls3,.cls4,
+.cls5,.cls6
+{
+    background-color: rgb(218, 247, 166);
+    width: 50px;
+    height: 27px;
+    margin-top:2rem ;
+}
+
+.cls2{
+    background-color: #ffc300;
+}
+ 
+.cls3{
+    background-color: #ff5733;
+}
+
+.cls4{
+    background-color: #c70039;
+}
+    
+.cls5{
+    background-color: #900c3f;
+}
+
+.cls6{
+    background-color: #581845;
+}
+
+
+hr
+{
+    margin: 0px;
+    padding: 0px;
+    width: ;
+
 }
