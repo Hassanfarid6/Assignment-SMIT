@@ -1,0 +1,51 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: "proxima-soft", "Proxima Soft", "Proxima Nova Soft", Helvetica, Arial, sans-serif;
+}
+
+div
+{
+    display: flex;
+    margin: 5rem 2rem 2rem 2rem;
+
+}
+
+h5
+{
+    margin:9px;
+    color: #c3c3c3;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.87rem;
+}
+
+.color
+{
+    margin-left: 4rem;
+    width: 50px;
+    height: 27px;
+    border-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+}
+
+.num
+{
+    letter-spacing: 0.025em;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    color: #3f3844;
+    font-size: 1.1rem;
+    /* font-family: "proxima-soft", "Proxima Soft", "Proxima Nova Soft", Helvetica, Arial, sans-serif; */
+}
+
+.span
+{
+    display: inherit;
+}
