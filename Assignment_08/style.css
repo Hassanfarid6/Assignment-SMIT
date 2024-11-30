@@ -336,8 +336,8 @@ th{
 .color-table td {
     /* Adjust border color as needed */
     /* border: 1px solid #c3c3c3;    */
-    border-top: 1px solid #c3c3c3; /* Border on top of cells */
-    border-bottom: 1px solid #c3c3c3; /* Border on bottom of cells */
+    border-top: 0.1px solid #c3c3c3; /* Border on top of cells */
+    border-bottom: 0.1px solid #c3c3c3; /* Border on bottom of cells */
     border-left: none; /* No left border */
     border-right: none; /* No right border */
     
@@ -351,9 +351,9 @@ th{
     /* background-color: #f5f5f5; Light gray background for header */
     font-weight: bold; /* Make header text bold */
     margin-top: 1rem; /* Optional: Adds space above the table */
-    border-top: 1px solid #c3c3c3; /* Add left border for the table */
-    border-left: 2px solid #c3c3c3; /* Add left border for the table */
-    border-right: 2px solid #c3c3c3; /* Add right border for the table */
+    border-top: 1px solid #c3c3c3ac; /* Add left border for the table */
+    border-left: 1px solid #c3c3c3b6; /* Add left border for the table */
+    border-right: 1px solid #c3c3c3c9; /* Add right border for the table */
 }
 
 /* Optional: Add alternating row colors */
