@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* dbab0e */
+:root {
+    --primary-color: #1fb8cc;
+    --secondary-color: #0edb63;
+    --text-color1: #ededed;
+    --text-color2:  #7dca76;
+  }
+
+body{
+    background: #23242a;
+    color: var(--text-color1);
+
+}
+.sname{
+    color: var(--text-color2);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: transparent;
+}
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    color: var(--text-color1);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+.logo{
+    font-size: 25px;
+    color: var(--text-color1);
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: var(--text-color1);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--text-color2);
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.homecontent{
+    width: 600px;
+}
+
+.homecontent h1{
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.homecontent h3{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 2rem;
+    color: var(--text-color2);
+}
+
+.homecontent p{
+    font-size: 16px;
+    margin-top: .5rem;
+    margin: 20px 0 40px;
+}
+
+.homecontent .btnbox{
+    width: 345px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btnbox a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 80px;
+    background-color: var(--text-color2);
+    border: 2px solid var(--text-color2);
+    border-radius: 7px;
+    font-size: 19px;
+    color: #23242a;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btnbox a:nth-child(2){
+    background-color: transparent;
+    color: var(--text-color2);  
+}
+
+.btnbox a:nth-child(2):hover{
+    color: #23242a;
+    
+}
+
+.btnbox a:nth-child(2)::before{
+    background: var(--text-color2);
+}
+.btnbox a:hover{
+    color: var(--text-color2);
+}
+
+.btnbox a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background:#23242a ;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btnbox a:hover::before{
+    width: 100%;
+}
+
+.hmesci{
+    position: absolute;
+    bottom: 70px;
+    width: 190px;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .hmesci a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border : 2px solid var(--text-color2);
+    border-radius: 50%;
+    color: var(--text-color1);
+    text-decoration:none;
+    font-size: 25PX;   
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.hmesci a:hover{
+    color: #23242a;
+}
+.hmesci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    background-color: var(--text-color2);
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+}
+
+.hmesci a:hover::before {
+    width: 100%;
+}
+
+.hmesci a  {
+    color:var(--text-color2);
+}
+
+.colorbox{
+    width: 500px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorbox button {
+    width: 400px;
+    height: 600px;
+    margin-left: 70px;
+    margin-top: 20px;
+    background-image: url('./image.png');
+    background-size: cover; /* Ensure the image covers the entire button */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image */
+    border: none;
+    opacity: 0.4;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), /* Shadow on the button itself */
+                0 6px 20px var(--text-color2); /* A faint outer glow */
+    transition: box-shadow 0.3s ease;
+    padding-top: 500px;
+    color: var(--text-color2);
+    font-size: 50px;
+}
+
+.colorbox button:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7), /* Darker and larger shadow on hover */
+                0 12px 30px var(--text-color2); /* More pronounced outer glow on hover */
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px;
+        
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #23242a;
+        border: 1px solid var(--text-color2);
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        right: 10%;
+        border-radius: 5px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .home{
+        display: flex;
+        margin-top: 30%;
+        
+    }
+
+    .homecontent {
+        max-width: 100%;
+        padding: 0 5%;
+        text-align: center;
+        
+    }
+
+    .homecontent h1 {
+        font-size: 2rem;
+    }
+
+    .homecontent h3 {
+        font-size: 1.5rem;
+    }
+
+    .btnbox {
+        flex-direction: column;
+        gap: 15px;
+      
+    }
+
+    .btnbox a {
+        width: 100%;
+    }
+
+    .hmesci {
+        flex-direction: column;
+        gap: 10px;
+        bottom: 20px;
+    }
+
+    .colorbox button {
+        width: 100%;
+        height: 300px;
+        font-size: 24px;
+        margin: 0 auto;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        width: 300px;
+        max-width: 100%;
+}
+}
+
+
+@media (max-width: 868px) {
+    .hmesci {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hmesci a{
+        width: 50px;
+        height: 50px;
+    }
+}
+
