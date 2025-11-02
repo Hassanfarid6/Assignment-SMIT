@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <!-- Basic CSS styling for better appearance -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .clock {
+            font-size: 2em;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .time-format {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML elements to display the time -->
+    <div class="clock">
+        <div class="time-format" id="time-24">HH:MM:SS</div>
+        <div class="time-format" id="time-12">HH:MM:SS AM/PM</div>
+    </div>
+
+    <script>
+        // Function to get and format the current time
+        function updateClock() {
+            // Current time object banaye
+            const now = new Date();
+
+            // 24-hour format ke liye hours, minutes, aur seconds nikale
+            let hours24 = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+
+            // Numbers ko 2 digits mein rakho (jaise 05 instead of 5)
+            hours24 = hours24 < 10 ? "0" + hours24 : hours24;
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            // 24-hour format ka time set karo (HH:MM:SS)
+            document.getElementById("time-24").textContent = `${hours24}:${minutes}:${seconds}`;
+
+            // 12-hour format ke liye hours convert karo
+            let hours12 = hours24 % 12 || 12; // 0 ya 12 ko handle karo
+            let ampm = hours24 >= 12 ? "PM" : "AM";
+            hours12 = hours12 < 10 ? "0" + hours12 : hours12;
+
+            // 12-hour format ka time set karo (HH:MM:SS AM/PM)
+            document.getElementById("time-12").textContent = `${hours12}:${minutes}:${seconds} ${ampm}`;
+        }
+
+        // Pehle ek baar clock update karo
+        updateClock();
+
+        // Har second (1000 milliseconds) mein clock update karo
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+</html>
